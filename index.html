@@ -3350,7 +3350,7 @@ function openAdmin() {
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/Congo-market/service-worker.js')
+      navigator.serviceWorker.register('./service-worker.js')
         .then(() => console.log('SW enregistré ✓'))
         .catch(err => console.error('SW erreur:', err));
     });
